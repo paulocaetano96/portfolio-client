@@ -1,34 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+/* ---- Packages IMPORTS -------------------*/
+import React, { useState, useEffect, useContext } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+
+/* ---- CSS IMPORTS -------------------*/
+import "./styles/App.css";
+/* ---- COMPONENT IMPORTS -------------------*/
+import Loading from "./components/Loading";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+/* ---- PAGES IMPORTS -------------------*/
+import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import CurriculumVitae from "./pages/CurriculumVitae";
+import ZASKS3000Details from "./pages/ZASKS3000Details";
+import TrackMyHealthDetails from "./pages/TrackMyHealthDetails";
+import TeamCommsDetails from "./pages/TeamCommsDetails";
+import CargoLoaderCorvoDetails from "./pages/CargoLoaderCorvoDetails";
+
+/* ---- EXTRA IMPORTS -------------------*/
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/CV" element={<CurriculumVitae />} />
+        <Route path="/zasks3000" element={<ZASKS3000Details />} />
+        <Route path="/trackmyhealth" element={<TrackMyHealthDetails />} />
+        <Route path="/teamcomms" element={<TeamCommsDetails />} />
+        <Route path="/cargoloader" element={<CargoLoaderCorvoDetails />} />
+      </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

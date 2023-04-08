@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.navbar-container {
+  background-color: red;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
