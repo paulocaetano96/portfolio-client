@@ -1,6 +1,6 @@
 /* ---- Packages IMPORTS -------------------*/
-import React, { useState, useEffect, useContext } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 /* ---- CSS IMPORTS -------------------*/
 import "../styles/navbar.css";
@@ -13,30 +13,62 @@ import ToggleTheme from "./ToggleTheme";
 /* ---- EXTRA IMPORTS -------------------*/
 
 function Navbar() {
-  return (
-    <nav className="navbar-container">
-      <div>
-        <img src="" alt="" />
-      </div>
+  //to change the burguer classes
+  const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
+  const [menu_class, setMenuClass] = useState("menu hidden");
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
 
-      <div>
-        <Link to="/">
-          <h5>Home</h5>
-        </Link>
-        <Link to="/aboutme">
-          <h5>About Me</h5>
-        </Link>
-        <Link to="/portfolio">
-          <h5>Portfolio</h5>
-        </Link>
-        <Link to="/contact">
-          <h5>Contact Me</h5>
-        </Link>
-        <Link to="/CV">
-          <h5>Curriculum Vitae</h5>
-        </Link>
-      </div>
-    </nav>
+  //toggle burguer menu change
+  const updateMenu = () => {
+    if (!isMenuClicked) {
+      setBurgerClass("burger-bar clicked");
+      setMenuClass("menu visible");
+    } else {
+      setBurgerClass("burger-bar unclicked");
+      setMenuClass("menu hidden");
+    }
+    setIsMenuClicked(!isMenuClicked);
+  };
+
+  return (
+    <div>
+      <nav>
+        <div className="logo-container">
+          <img
+            className="logo-image"
+            src="/src/assets/images/logo-full.png"
+            alt="three sails logo - Paulo Caetano web development and Web Solutions"
+          />
+        </div>
+
+        <div className="menuToggle">
+          <div className="burger-menu" onClick={updateMenu}>
+            <div className={burger_class}></div>
+            <div className={burger_class}></div>
+            <div className={burger_class}></div>
+          </div>
+        </div>
+        <div className={menu_class}>
+          <ul className="menu">
+            <Link to="/" className="link">
+              <li>Home</li>
+            </Link>
+            <Link to="/aboutme" className="link">
+              <li>About Me</li>
+            </Link>
+            <Link to="/portfolio" className="link">
+              <li>Portfolio</li>
+            </Link>
+            <Link to="/contact" className="link">
+              <li>Contact Me</li>
+            </Link>
+            <Link to="/CV" className="link">
+              <li>Curriculum Vitae</li>
+            </Link>
+          </ul>
+        </div>
+      </nav>
+    </div>
   );
 }
 
