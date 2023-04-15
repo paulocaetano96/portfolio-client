@@ -9,6 +9,8 @@ import Loading from "./components/Loading";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+import Navbar2 from "./components/Navbar2";
+
 /* ---- PAGES IMPORTS -------------------*/
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
@@ -25,7 +27,7 @@ import CargoLoaderCorvoDetails from "./pages/CargoLoaderCorvoDetails";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar2 />
 
       <Routes>
         <Route path="/" element={<Home />} />

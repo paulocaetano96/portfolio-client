@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cover {
+  height: 7em;
+  width: 100%;
+}
+
+.navbar {
+  height: 7em;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-react {
+  margin-left: 2em;
+}
+/* ------- Menu ------- */
+
+.menu {
+  background-color: grey;
+  height: 100vh;
+  position: absolute;
+  top: 7em;
+  right: 0;
+  padding-top: 7em;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu li {
+  padding-bottom: 2rem;
+}
+
+.link {
+  font-size: 1.3rem;
+  color: black; /* or any other contrasting color */
+  margin: 1em 0; /* add margin between each link */
+  text-decoration: none; /* remove default text decoration (underline) */
+}
+
+.link:hover {
+  color: blue; /* set color for hover state */
+}
+
+.link:focus {
+  outline: none; /* remove purple color focus outline */
+}
+
+.link:active {
+  color: green; /* set color for active/clicked state */
+}

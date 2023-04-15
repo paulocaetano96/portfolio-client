@@ -14,25 +14,23 @@ import ToggleTheme from "./ToggleTheme";
 
 function Navbar() {
   //to change the burguer classes
-  const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
-  const [menu_class, setMenuClass] = useState("menu hidden");
-  const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const [burgerClass, setBurgerClass] = useState("burger-bar unclicked");
+  const [menuClass, setMenuClass] = useState("menu hidden");
 
   //toggle burguer menu change
   const updateMenu = () => {
-    if (!isMenuClicked) {
+    if (burgerClass === "burger-bar unclicked") {
       setBurgerClass("burger-bar clicked");
       setMenuClass("menu visible");
     } else {
       setBurgerClass("burger-bar unclicked");
       setMenuClass("menu hidden");
     }
-    setIsMenuClicked(!isMenuClicked);
   };
 
   return (
-    <div>
-      <nav>
+    <>
+      <nav className="cover">
         <div className="logo-container">
           <img
             className="logo-image"
@@ -41,34 +39,37 @@ function Navbar() {
           />
         </div>
 
+        <div>
+          <ToggleLanguage />
+          <ToggleTheme />
+        </div>
+
         <div className="menuToggle">
           <div className="burger-menu" onClick={updateMenu}>
-            <div className={burger_class}></div>
-            <div className={burger_class}></div>
-            <div className={burger_class}></div>
+            <div className={burgerClass}></div>
+            <div className={burgerClass}></div>
+            <div className={burgerClass}></div>
           </div>
         </div>
-        <div className={menu_class}>
-          <ul className="menu">
-            <Link to="/" className="link">
-              <li>Home</li>
-            </Link>
-            <Link to="/aboutme" className="link">
-              <li>About Me</li>
-            </Link>
-            <Link to="/portfolio" className="link">
-              <li>Portfolio</li>
-            </Link>
-            <Link to="/contact" className="link">
-              <li>Contact Me</li>
-            </Link>
-            <Link to="/CV" className="link">
-              <li>Curriculum Vitae</li>
-            </Link>
-          </ul>
+        <div className={menuClass}>
+          <Link to="/" className="link">
+            Home
+          </Link>
+          <Link to="/aboutme" className="link">
+            About Me
+          </Link>
+          <Link to="/portfolio" className="link">
+            Portfolio
+          </Link>
+          <Link to="/contact" className="link">
+            Contact Me
+          </Link>
+          <Link to="/CV" className="link">
+            Curriculum Vitae
+          </Link>
         </div>
       </nav>
-    </div>
+    </>
   );
 }
 
