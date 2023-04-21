@@ -1,87 +1,76 @@
 * {
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* .navbar-container {
-  background-color: #3a3a3a;
+.navbar {
+  height: 6em;
   width: 100vw;
-  height: 10vh;
+  top: 0;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
 }
 
-.logo-container {
-  width: 50vw;
-}
-*/
-.logo-image {
-  width: 40%;
-  height: auto;
+.logoContainer {
+  width: 40vw;
+  height: 6em;
 }
 
-/* hamburguer button/menu */
-nav {
-  width: 100vw;
-  height: 10vh;
-  background-color: black;
-  display: flex;
-  justify-content: flex-start;
-  padding: 1em;
+.logoImage {
+  height: 40%;
+  width: auto;
+  align-items: center;
 }
 
-.burger-menu {
-  height: 100%;
-  width: 4em;
+/* this is for the hamburger itself */
+.hamburger-react {
+  margin-right: 2em;
+}
+
+/* ------ Media queries for the toggles Language and Theme ---------*/
+
+/* ------- Hamburger Menu ------- */
+
+.menu {
+  background-color: grey;
+  height: 100vh;
+  position: absolute;
+  top: 6em;
+  right: 0;
+  padding-top: 6em;
+  box-shadow: -100vw 0 0 100vw rgba(89, 79, 79, 0.7);
+}
+
+.menu ul {
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
+  padding-inline-start: 0; /*to delete existing padding from the balls on the ul*/
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.burger-bar {
-  width: 4em;
-  height: 0.5em;
-  background-color: blue;
-  border-radius: 10px;
+.menu li {
+  padding-bottom: 2rem;
 }
 
-.menu {
-  width: 50%;
-  height: 100vh;
-  background-color: grey;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  text-decoration: none;
+.link {
+  font-size: 1.3rem;
+  color: black; /* or any other contrasting color */
+  text-decoration: none; /* remove default text decoration (underline) */
 }
 
-/* ------ sliding menu --------- */
-.hidden {
-  display: none;
+.link:hover {
+  color: blue; /* set color for hover state */
 }
 
-.visible {
-  display: inherit;
-  z-index: 100;
+.link:focus {
+  outline: none; /* remove purple color focus outline */
 }
 
-/* ------- animations ------------ */
-.burger-bar.clicked:nth-child(1) {
-  transform: rotate(45deg) translate(0.75em, 1.25em);
-  transition: ease-out 0.5s;
-}
-.burger-bar.clicked:nth-child(2) {
-  transform: scale(0.1);
-  transition: ease-out 0.5s;
-}
-.burger-bar.clicked:nth-child(3) {
-  transform: rotate(135deg) translate(-1.1em, 1.8em);
-  transition: ease-out 0.5s;
-}
-/* unclicked hamburguer menu */
-.burger-bar.unclicked {
-  transform: rotate(0) translate(0);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+.link:active {
+  color: green; /* set color for active/clicked state */
 }

@@ -1,0 +1,51 @@
+/* Colors used: Green (#009B4D), tangerine yellow (#FFCC00), ivory (#FAF5E9)
+ */
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.banner {
+  padding-top: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 100vh;
+}
+
+.background-animation-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* .intro-text {
+  height: 80vh;
+} */
+
+.intro-text-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-text-fill-color: #faf5e9;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #009b4d;
+  font-size: 1.5rem;
+}
+
+.intro-text-lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.intro-text-learnMore {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}

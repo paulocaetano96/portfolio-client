@@ -18,7 +18,7 @@ function ToggleLanguage() {
         <input type="checkbox" onClick={handleToggleClick}></input>
         <span className="slider"></span>
       </label>
-      {isPortuguese ? "English" : "Português"}
+      {/*       {isPortuguese ? "English" : "Português"} */}
     </div>
   );
 }
