@@ -6,25 +6,13 @@
   padding: 0;
 }
 
+/* -------- LANDING section START ----------------- */
 .banner {
-  padding-top: 10rem;
+  padding-top: 12rem;
   padding-left: 2rem;
   padding-right: 2rem;
   height: 100vh;
 }
-
-.background-animation-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-/* .intro-text {
-  height: 80vh;
-} */
 
 .intro-text-upper {
   display: flex;
@@ -33,10 +21,11 @@
   -webkit-text-fill-color: #faf5e9;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #009b4d;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 30px;
 }
 
-.intro-text-lower {
+.personalDescription {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,5 +36,87 @@
 .intro-text-learnMore {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
+
+.learnMore-text {
+  margin-bottom: 2.5rem;
+}
+
+/* ---------- Animated Background container -------- */
+.background-animation-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* --------------------------------------------------- */
+
+/* -------- Home page Arrow Down (from Learn More) & animation ---------- */
+.learnMore-arrows {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+@keyframes arrowDown {
+  0% {
+    border-color: white;
+    transform: translate(0, 0);
+  }
+  40% {
+    border-color: white;
+    transform: translate(15px, 15px);
+  }
+  40.1%,
+  100% {
+    border-color: #ffd64a;
+  }
+}
+
+.learnMore-arrows span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  animation: arrowDown 1s linear infinite;
+}
+
+.learnMore-arrows span:nth-child(1) {
+  top: -30px;
+  left: -30px;
+  animation-delay: 0s;
+}
+.learnMore-arrows span:nth-child(2) {
+  top: -15px;
+  left: -15px;
+  animation-delay: 0.2s;
+}
+.learnMore-arrows span:nth-child(3) {
+  top: 0;
+  left: 0;
+  animation-delay: 0.4s;
+}
+/* ----------- End of learn more Arrow Down CSS and animation ------- */
+
+/* -------- END of LANDING section ------------ */
+
+/* -------- START of SKILLS section ---------- */
+
+.skills-section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.myImage-container img {
+  width: 80vw;
+}
+
+/* -------- END of SKILLS section ------------ */

@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 /* ---- PAGES IMPORTS -------------------*/
 import Home from "./pages/Home";
-import AboutMe from "./pages/AboutMe";
+import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import CurriculumVitae from "./pages/CurriculumVitae";
@@ -29,7 +29,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/CV" element={<CurriculumVitae />} />
