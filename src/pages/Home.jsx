@@ -62,19 +62,17 @@ function Home() {
           <div className="skills-text-container">
             <div className="skills-squares-area">
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-              </ul>
-              <ul>
-                <li>React</li>
-                <li>MongoDB</li>
-                <li>Node.js</li>
-              </ul>
-              <ul>
-                <li>Git</li>
-                <li>Agile</li>
-                <li>Excel</li>
+                <li aria-label="Markup">HTML</li>
+                <li aria-label="Styling">CSS</li>
+                <li aria-label="Scripting">Javascript</li>
+
+                <li aria-label="Frontend">React</li>
+                <li aria-label="Database">MongoDB</li>
+                <li aria-label="Backend">Node.js</li>
+
+                <li aria-label="Version Control">Git</li>
+                <li aria-label="Methodology">Agile</li>
+                <li aria-label="Spreadsheets">Excel</li>
               </ul>
             </div>
             <div className="text-area">

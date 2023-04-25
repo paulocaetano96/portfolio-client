@@ -136,6 +136,119 @@
   border: none;
   border-radius: 40px;
 }
+
+.skills-text-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  flex: 1;
+  min-height: 100%;
+}
+
+.skills-squares-area ul {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+
+.skills-squares-area li {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: navy;
+  position: relative;
+  /* 20% because i want 5 items per row */
+  min-width: 25%;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.skills-squares-area li:hover::after {
+  content: attr(aria-label);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 100px;
+  height: 30px;
+  color: white;
+  text-align: center;
+
+  line-height: 30px;
+  border-radius: 5px;
+  white-space: nowrap;
+  padding: 0.2rem;
+  z-index: 1;
+  animation: square-fadein 1s linear forwards;
+}
+@keyframes square-fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.skills-squares-area li[aria-label="Markup"]:hover::after {
+  background-color: blue;
+}
+
+.skills-squares-area li[aria-label="Styling"]:hover::after {
+  background-color: rgb(228, 161, 172);
+}
+
+.skills-squares-area li[aria-label="Scripting"]:hover::after {
+  background-color: green;
+}
+
+.skills-squares-area li[aria-label="Frontend"]:hover::after {
+  background-color: orange;
+}
+
+.skills-squares-area li[aria-label="Database"]:hover::after {
+  background-color: rgb(96, 193, 74);
+}
+
+.skills-squares-area li[aria-label="Backend"]:hover::after {
+  background-color: black;
+}
+
+.skills-squares-area li[aria-label="Version Control"]:hover::after {
+  background-color: olive;
+  padding: 0 0.5rem;
+}
+
+.skills-squares-area li[aria-label="Methodology"]:hover::after {
+  background-color: red;
+  padding: 0 0.5rem;
+}
+
+.skills-squares-area li[aria-label="Spreadsheets"]:hover::after {
+  background-color: #d3b085;
+  padding: 0 0.5rem;
+}
+
+#title-small-bio {
+  padding-bottom: 1rem;
+}
+
+#small-text-bio {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+/* -------- END of SKILLS section ------------ */
+
+/* -----!!!!!!!!!!!!!!!!!!---- MEDIA QUERIES ----!!!!!!!!!!-------- */
 /* grow up to 200px x 218px */
 @media (min-width: 235px) and (max-width: 373px) {
   .myImage {
@@ -164,7 +277,7 @@
 }
 
 /* turns flex-direction row, image to the side,  shrinks then grow to 207px x 224px */
-@media (min-width: 780px) and (max-width: 2000px) {
+@media (min-width: 780px) and (max-width: 5000px) {
   .myImage-container {
     width: 40%;
     max-width: 350px;
@@ -178,59 +291,14 @@
     justify-content: space-evenly;
     align-items: center;
   }
-}
 
-.skills-text-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 50vw;
-  flex: 1;
-  min-height: 100%;
-  align-items: flex-start;
-}
+  .skills-squares-area {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
 
-.skills-squares-area {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
+  .skills-squares-area li {
+  }
 }
-
-.skills-squares-area li {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  font-weight: bold;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  margin-bottom: 1rem;
-  margin-right: 0.5rem;
-}
-
-.skills-squares-area li:hover {
-}
-/* .skills {
-  display: flex;
-  flex-direction: flex-start;
-}
-
-.skills li {
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  margin-bottom: 10px;
-} */
-
-#title-small-bio {
-  padding-bottom: 1rem;
-}
-
-#small-text-bio {
-  display: block;
-  padding-bottom: 1rem;
-  font-size: 1.2rem;
-  font-weight: 300;
-  word-wrap: break-word;
-}
-
-/* -------- END of SKILLS section ------------ */
