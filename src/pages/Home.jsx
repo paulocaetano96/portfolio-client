@@ -48,24 +48,38 @@ function Home() {
 
       {/* -------- START of SKILLS section ---------- */}
       <section className="skills-section">
-        <h1 classname="">My Skills</h1>
+        <h1 id="mySkills-h1">My Skills</h1>
 
-        <div className="skills-picture-bio-container">
+        <div className="skills-image-bio-container">
           <div className="myImage-container">
             <img
-              sizes="(max-width: 500px)"
+              className="myImage"
               src="src/assets/images/homepage-mypicture.jpg"
               alt="a picture of Paulo Caetano"
               loading="lazy"
             />
           </div>
-
-          <div>
-            <div className="skills-squares-area"></div>
-
-            <div>
-              <h3>I love building stuff 3 </h3>
-              <p>
+          <div className="skills-text-container">
+            <div className="skills-squares-area">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+              <ul>
+                <li>React</li>
+                <li>MongoDB</li>
+                <li>Node.js</li>
+              </ul>
+              <ul>
+                <li>Git</li>
+                <li>Agile</li>
+                <li>Excel</li>
+              </ul>
+            </div>
+            <div className="text-area">
+              <h3 id="title-small-bio">I love building stuff 3 </h3>
+              <p id="small-text-bio">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt hic necessitatibus deleniti maxime repellat? Cum sequi
                 sint ut eum iusto? Iusto ad similique ratione itaque sequi sit

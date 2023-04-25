@@ -113,10 +113,124 @@
 .skills-section {
   padding-left: 2rem;
   padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
 
-.myImage-container img {
-  width: 80vw;
+#mySkills-h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1.8rem;
+}
+
+.myImage-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myImage {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 40px;
+}
+/* grow up to 200px x 218px */
+@media (min-width: 235px) and (max-width: 373px) {
+  .myImage {
+    max-width: 200px;
+    max-height: 218px;
+    padding-bottom: 2rem;
+  }
+}
+
+/* grow to 300px x 390px */
+@media (min-width: 374px) and (max-width: 480px) {
+  .myImage {
+    max-width: 250px;
+    max-height: 390px;
+    padding-bottom: 2rem;
+  }
+}
+
+/* fixed size from 481px to 779px */
+@media (min-width: 481px) and (max-width: 779px) {
+  .myImage {
+    max-width: 370px;
+    max-height: auto;
+    padding-bottom: 2rem;
+  }
+}
+
+/* turns flex-direction row, image to the side,  shrinks then grow to 207px x 224px */
+@media (min-width: 780px) and (max-width: 2000px) {
+  .myImage-container {
+    width: 40%;
+    max-width: 350px;
+    padding-right: 2rem;
+    flex: 0 0 auto;
+  }
+
+  .skills-image-bio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.skills-text-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  flex: 1;
+  min-height: 100%;
+  align-items: flex-start;
+}
+
+.skills-squares-area {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+}
+
+.skills-squares-area li {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-weight: bold;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+
+.skills-squares-area li:hover {
+}
+/* .skills {
+  display: flex;
+  flex-direction: flex-start;
+}
+
+.skills li {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-bottom: 10px;
+} */
+
+#title-small-bio {
+  padding-bottom: 1rem;
+}
+
+#small-text-bio {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  word-wrap: break-word;
 }
 
 /* -------- END of SKILLS section ------------ */
