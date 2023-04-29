@@ -38,6 +38,8 @@ function App() {
         <Route path="/teamcomms" element={<TeamCommsDetails />} />
         <Route path="/cargoloader" element={<CargoLoaderCorvoDetails />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }

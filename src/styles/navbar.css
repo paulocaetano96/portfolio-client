@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
+  z-index: 10;
 }
 
 .logoContainer {
@@ -27,6 +28,7 @@
 /* this is for the hamburger itself */
 .hamburger-react {
   margin-right: 2em;
+  z-index: 11;
 }
 
 /* ------ Media queries for the toggles Language and Theme ---------*/

@@ -18,9 +18,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-text-fill-color: #faf5e9;
+  -webkit-text-fill-color: rgb(250, 245, 233);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #009b4d;
+  -webkit-text-stroke-color: rgb(0, 155, 77);
   font-size: 1.25rem;
   line-height: 30px;
 }
@@ -113,13 +113,15 @@
 .skills-section {
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-bottom: 6rem;
   display: flex;
   flex-direction: column;
   width: 100vw;
 }
 
-#mySkills-h1 {
+h1 {
   font-size: 2.5rem;
+  font-weight: 500;
   padding-bottom: 1.8rem;
 }
 
@@ -148,6 +150,7 @@
 .skills-squares-area ul {
   display: flex;
   align-content: flex-start;
+
   flex-wrap: wrap;
   max-width: 500px;
 }
@@ -159,13 +162,11 @@
   font-weight: bold;
   color: white;
   padding: 0.5rem;
-  margin-bottom: 1rem;
-  background-color: navy;
+  margin-bottom: 0.5rem;
+  background-color: royalblue;
   position: relative;
-  /* 20% because i want 5 items per row */
   min-width: 25%;
   font-size: 0.9rem;
-  margin-right: 0.5rem;
 }
 
 .skills-squares-area li:hover::after {
@@ -178,7 +179,6 @@
   height: 30px;
   color: white;
   text-align: center;
-
   line-height: 30px;
   border-radius: 5px;
   white-space: nowrap;
@@ -196,7 +196,7 @@
 }
 
 .skills-squares-area li[aria-label="Markup"]:hover::after {
-  background-color: blue;
+  background-color: rgb(193, 56, 224);
 }
 
 .skills-squares-area li[aria-label="Styling"]:hover::after {
@@ -248,6 +248,96 @@
 
 /* -------- END of SKILLS section ------------ */
 
+/* -------- START of CHAT section ---------- */
+
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.myEmail {
+  text-decoration: none;
+  color: rgb(0, 155, 77);
+  font-weight: 600;
+}
+
+.button-snorlax-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.snorlax {
+  height: 12rem;
+}
+
+.talk-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.talk-button {
+  border: none;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: rgb(65, 105, 225, 0.1);
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+  box-shadow: ;
+}
+
+.talk-button span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 3px solid royalblue;
+  border-radius: 10px;
+}
+
+.talk-button span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 1s;
+}
+
+.talk-button:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+}
+
+.talk-button:hover {
+  color: white;
+}
+
+.talk-button:active span::before {
+  background: #2751cd;
+}
+
+/* -------- END of CHAT section ------------ */
+
 /* -----!!!!!!!!!!!!!!!!!!---- MEDIA QUERIES ----!!!!!!!!!!-------- */
 /* grow up to 200px x 218px */
 @media (min-width: 235px) and (max-width: 373px) {
@@ -264,6 +354,13 @@
     max-width: 250px;
     max-height: 390px;
     padding-bottom: 2rem;
+  }
+
+  .talk-button {
+    display: flex;
+    justify-content: center;
+    width: 1rem;
+    border-radius: 10px;
   }
 }
 
@@ -295,10 +392,11 @@
   .skills-squares-area {
     display: flex;
     align-items: flex-start;
-    margin-left: 0;
     margin-bottom: 2rem;
   }
 
   .skills-squares-area li {
+    margin: 0 0.5rem 1rem 0;
   }
 }
+/* -------- END of media queries ------------ */

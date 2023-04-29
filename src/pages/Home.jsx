@@ -48,7 +48,7 @@ function Home() {
 
       {/* -------- START of SKILLS section ---------- */}
       <section className="skills-section">
-        <h1 id="mySkills-h1">My Skills</h1>
+        <h1>My Skills</h1>
 
         <div className="skills-image-bio-container">
           <div className="myImage-container">
@@ -81,9 +81,9 @@ function Home() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt hic necessitatibus deleniti maxime repellat? Cum sequi
                 sint ut eum iusto? Iusto ad similique ratione itaque sequi sit
-                sapiente dolores repudiandae.{" "}
+                sapiente dolores repudiandae.
               </p>
-              <Link to="/about">Keep reading my bio</Link>
+              <Link to="/about">More info in bio</Link>
             </div>
           </div>
         </div>
@@ -91,14 +91,31 @@ function Home() {
       {/* -------- END of SKILLS section ------------ */}
 
       {/* -------- START of RANDOM section ---------- */}
-      <section>Section 3</section>
+      {/* <section></section> ->to see if i'll add anything in this area */}
       {/* -------- END of RANDOM section ------------ */}
 
       {/* -------- START of CHAT section ------------ */}
-      <section>Section 4</section>
-      {/* -------- END of CHAT section -------------- */}
+      <section className="chat-section">
+        <h1>Care for a chat?</h1>
 
-      <Footer />
+        <a href="#" className="myEmail">
+          paulocaetano.webdev@gmail.com
+        </a>
+
+        <div className="button-snorlax-container">
+          <button className="talk-button">
+            <Link to="/contact">
+              Let's talk!<span></span>
+            </Link>
+          </button>
+          <img
+            src="src/assets/images/snorlax.gif"
+            alt="Snolax gif"
+            className="snorlax"
+          ></img>
+        </div>
+      </section>
+      {/* -------- END of CHAT section -------------- */}
     </div>
   );
 }

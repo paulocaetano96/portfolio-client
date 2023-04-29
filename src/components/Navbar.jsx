@@ -18,11 +18,13 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logoContainer">
-        <img
-          src="/src/assets/images/logo-full.png"
-          alt="three sails logo - Paulo Caetano web development and Web Solutions"
-          className="logoImage"
-        />
+        <Link to="/">
+          <img
+            src="/src/assets/images/logo-full.png"
+            alt="three sails logo - Paulo Caetano web development and Web Solutions"
+            className="logoImage"
+          />
+        </Link>
       </div>
 
       <div className="">
