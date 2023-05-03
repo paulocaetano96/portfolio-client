@@ -1,0 +1,50 @@
+[
+  {
+    "image": "/src/assets/images/award.jpg",
+    "title": "An End and a beginning",
+    "subTitle": "A role model, a leader, a friend. Navy captain César Lópes.",
+    "interval": 5000
+  },
+  {
+    "image": "/src/assets/images/hongkong.jpeg",
+    "title": "My first maneuvre",
+    "subTitle": "Hong Kong harbor, fantastic views, great memories!",
+    "interval": 5000
+  },
+  {
+    "image": "/src/assets/images/astronomical.jpg",
+    "title": "Astronomical Positioning",
+    "subTitle": "Because learning never ceasses. A way to determine one's position using the stars",
+    "interval": 5000
+  },
+  {
+    "image": "/src/assets/images/southamptonExpress.jpg",
+    "title": "MV Southampton Express",
+    "subTitle": "Home, far from home",
+    "interval": 5000
+  },
+  {
+    "image": "/src/assets/images/crew.jpg",
+    "title": "Teamwork makes the dreamwork",
+    "subTitle": "Big or small, the task will be completed.",
+    "interval": 5000
+  },
+  {
+    "image": "/src/assets/images/radar.jpg",
+    "title": "Moments that are ingranied in one's memory. Stresfull times",
+    "subTitle": "Going from nothingness all around to a sea of metal in no time. Dangerous waters.",
+    "interval": 5000
+  },
+  {
+    "image": "/src/assets/images/canyoning.jpeg",
+    "title": "Enjoy yourself, it's a must",
+    "subTitle": "Because it can't be all about the work, we have to live a little!",
+    "interval": 5000
+  },
+  {
+    "image": "/src/assets/images/ironhack.png",
+    "title": "A new step, a new world",
+    "subTitle": "Never in my life I've experienced such comradery and eagerness to help your partner. A life lesson, a joyfull memory.",
+    "interval": 5000
+  }
+]

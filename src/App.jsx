@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
 /* ---- CSS IMPORTS -------------------*/
-import "./styles/App.css";
+
 /* ---- COMPONENT IMPORTS -------------------*/
 import Loading from "./components/Loading";
 import Navbar from "./components/Navbar";

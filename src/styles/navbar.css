@@ -12,6 +12,7 @@
   justify-content: space-evenly;
   position: fixed;
   z-index: 10;
+  background: rgba(190, 151, 151, 0.9);
 }
 
 .logoContainer {
@@ -23,6 +24,7 @@
   height: 40%;
   width: auto;
   align-items: center;
+  mix-blend-mode: difference;
 }
 
 /* this is for the hamburger itself */

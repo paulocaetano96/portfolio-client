@@ -49,7 +49,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/aboutme" className="link">
+                <Link to="/about" className="link">
                   About Me
                 </Link>
               </li>

@@ -374,7 +374,7 @@ h1 {
 }
 
 /* turns flex-direction row, image to the side,  shrinks then grow to 207px x 224px */
-@media (min-width: 780px) and (max-width: 5000px) {
+@media (width > 780px) {
   .myImage-container {
     width: 40%;
     max-width: 350px;
@@ -396,7 +396,7 @@ h1 {
   }
 
   .skills-squares-area li {
-    margin: 0 0.5rem 1rem 0;
+    margin: 0 1.8rem 1rem 0;
   }
 }
 /* -------- END of media queries ------------ */
