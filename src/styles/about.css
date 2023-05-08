@@ -24,18 +24,3 @@
 
 .personal-images-carousel-container {
 }
-
-.size {
-  border-radius: 20px;
-  width: 500px; /* set a fixed width */
-  height: 500px; /* set a fixed height */
-  object-fit: cover; /* scale the image while preserving aspect ratio */
-}
-
-.caption {
-  background-color: rgb(84, 123, 128, 0.6);
-  padding: 1rem 1rem;
-}
-
-@media {width > ;
-}

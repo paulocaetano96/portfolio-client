@@ -22,9 +22,9 @@ function Home() {
           <div className="intro-text">
             <div className="intro-text-upper">
               <h3>HELLO WORLD! I'M</h3>
-              <h3 classname="name-nickname">PAULO CAETANO</h3>
+              <h3 className="name-nickname">PAULO CAETANO</h3>
               <h3>BUT YOU CAN CALL ME</h3>
-              <h3 classname="name-nickname">THE DUDE!</h3>
+              <h3 className="name-nickname">THE DUDE!</h3>
             </div>
 
             <p className="personalDescription">
@@ -34,7 +34,7 @@ function Home() {
             <div>
               <div className="intro-text-learnMore">
                 <h4 className="learnMore-text">Learn More</h4>
-                <div class="learnMore-arrows">
+                <div className="learnMore-arrows">
                   <span></span>
                   <span></span>
                   <span></span>

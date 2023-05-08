@@ -8,7 +8,7 @@
 
 /* -------- LANDING section START ----------------- */
 .banner {
-  padding-top: 12rem;
+  padding-top: 8rem;
   padding-left: 2rem;
   padding-right: 2rem;
   height: 100vh;
@@ -65,14 +65,14 @@
 
 @keyframes arrowDown {
   0% {
-    border-color: white;
+    border-color: rgb(85, 86, 154);
     transform: translate(0, 0);
   }
-  40% {
-    border-color: white;
+  20% {
+    border-color: rgb(85, 86, 154);
     transform: translate(15px, 15px);
   }
-  40.1%,
+  20.1%,
   100% {
     border-color: #ffd64a;
   }
@@ -295,7 +295,6 @@ h1 {
   z-index: 1;
   font-family: inherit;
   font-weight: 500;
-  box-shadow: ;
 }
 
 .talk-button span {
@@ -304,9 +303,9 @@ h1 {
   top: 0;
   width: 100%;
   height: 100%;
-  background: transparent;
+  background: rgb(65, 105, 225, 0.4);
   z-index: -1;
-  border: 3px solid royalblue;
+  border: 3px solid rgb(65, 105, 225);
   border-radius: 10px;
 }
 

@@ -3,48 +3,56 @@
     "image": "/src/assets/images/award.jpg",
     "title": "An End and a beginning",
     "subTitle": "A role model, a leader, a friend. Navy captain César Lópes.",
-    "interval": 5000
+    "interval": 5000,
+    "alt": "Award Cerimony with Merchant Captain César Lópes"
   },
   {
     "image": "/src/assets/images/hongkong.jpeg",
     "title": "My first maneuvre",
     "subTitle": "Hong Kong harbor, fantastic views, great memories!",
-    "interval": 5000
+    "interval": 5000,
+    "alt": "Panomaric View of the entry of Hong Kong Container Terminal Harbour"
   },
   {
     "image": "/src/assets/images/astronomical.jpg",
     "title": "Astronomical Positioning",
     "subTitle": "Because learning never ceasses. A way to determine one's position using the stars",
-    "interval": 5000
+    "interval": 5000,
+    "alt": "Training Session in the usage of the sextant to determine one's position based on the stars."
   },
   {
     "image": "/src/assets/images/southamptonExpress.jpg",
     "title": "MV Southampton Express",
     "subTitle": "Home, far from home",
-    "interval": 5000
+    "interval": 5000,
+    "alt": "View from the bridge of the Motor Vessel Southampton Express, 366.9m long container vessel"
   },
   {
     "image": "/src/assets/images/crew.jpg",
     "title": "Teamwork makes the dreamwork",
     "subTitle": "Big or small, the task will be completed.",
-    "interval": 5000
+    "interval": 5000,
+    "alt": "Image of Paulo and Levi, a fellow seafarer and coworker on board"
   },
   {
     "image": "/src/assets/images/radar.jpg",
     "title": "Moments that are ingranied in one's memory. Stresfull times",
     "subTitle": "Going from nothingness all around to a sea of metal in no time. Dangerous waters.",
-    "interval": 5000
+    "interval": 5000,
+    "alt": "Radar image of heavy navigation in the Taiwan strait with several vessels in close proximity and CPA 0."
   },
   {
     "image": "/src/assets/images/canyoning.jpeg",
     "title": "Enjoy yourself, it's a must",
     "subTitle": "Because it can't be all about the work, we have to live a little!",
-    "interval": 5000
+    "interval": 5000,
+    "alt": "Image of Canyoning"
   },
   {
     "image": "/src/assets/images/ironhack.png",
     "title": "A new step, a new world",
     "subTitle": "Never in my life I've experienced such comradery and eagerness to help your partner. A life lesson, a joyfull memory.",
-    "interval": 5000
+    "interval": 5000,
+    "alt": "Web Development Ironhack bootcamp picture with the 2023 January class."
   }
 ]

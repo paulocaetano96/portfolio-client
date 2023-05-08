@@ -39,5 +39,5 @@ function About() {
     </div>
   );
 }
-
+/* IMPORTANT: DEPLOY UNDER THIS URL: https://www.caetanocodes.com */
 export default About;
